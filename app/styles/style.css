@@ -38,14 +38,16 @@ header nav a:hover{
     color: rgb(0, 0, 0);
 }
 
-#navSection{
+
+/* #navSection{
     display: none;
     z-index: 900;
 }
 #navSection *{
     display: none;
     z-index: 900;
-}
+} */
+
 
 #presentation-section{
     width: 100%;
@@ -57,7 +59,7 @@ header nav a:hover{
 #presentation-section #background-img{
     min-width: 97%;
     height: 100%;
-    background-image: url(../images/profile.jpg.png);
+    background-image: url(../../images/profile.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -70,7 +72,7 @@ header nav a:hover{
 }
 #presentation-section #container{
     position: absolute;
-    z-index: 800;
+    z-index: 700;
     top: 0;
     left: 0;
     height: 100%;

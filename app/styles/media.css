@@ -10,14 +10,21 @@
         box-shadow: 0 5px 50px var(--primary-color);
     }
 
-    #navSection{
+    .navIconClicked{
+        
+    }
+    .navIconNotClicked{
+        
+    }
+    .navSectionExist{
         position: fixed;
+        z-index: 800;
         bottom: 0;
         height: 0;
         background-color:  rgba(7, 215, 7, 0.177);
         margin: 0;
         width: 100%;
-        height: 0;
+        height: 100vh;
         border-radius: 0;
         /* padding-top: calc(var(--header-height) * 2); */
         backdrop-filter: blur(10px);
@@ -27,17 +34,44 @@
         flex-direction: column;
         transition: 0.3s ease;
     }
-    #navSection a{
+    .navSectionExist a{
+        z-index: 800;
         margin: 15px 0;
         font-size: var(--double-size);
         font-weight: var(--bold);
         text-decoration: none;
         color: var(--white);
-        opacity: 0;
+        opacity: 1;
     }
-    #navSection a:hover{
+    .navSectionExist a:hover{
         color: rgb(0, 0, 0);
     }
+    .navSectionExist{
+        height: 100vh;
+    }
+    .navSectionExist *{
+        display: flex;
+        opacity: 1;
+    }
+    .navSectionNotExist{
+        position: fixed;
+        z-index: 800;
+        bottom: 0;
+        background-color:  rgba(7, 215, 7, 0.177);
+        width: 100%;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s ease;
+        height: 0;
+        transition: 0.3s ease;
+    } 
+    .navSectionNotExist a{
+        display: none;
+        z-index: 800;
+    } 
 
     :root{
         --primary-size: 20px;
@@ -48,7 +82,7 @@
     }
 
     #presentation-section #background-img{
-        background-image: url(../images/profileForPhone.jpg);
+        background-image: url(../../images/profileForPhone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -69,7 +103,7 @@
 @media ( min-width: 550px ) and ( max-width: 650px ){
 
     #presentation-section #background-img{
-        background-image: url(../images/profileForPhone.jpg);
+        background-image: url(../../images/profileForPhone.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right right;
@@ -88,7 +122,7 @@
 @media ( min-width: 650px ) and ( max-width: 1100px ){
 
     #presentation-section #background-img{
-        background-image: url(../images/profile.jpg.png);
+        background-image: url(../../images/profile.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right right;
