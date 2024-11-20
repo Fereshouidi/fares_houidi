@@ -264,6 +264,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 0;
 }
 
 #projects-section .carts-cntainer{
