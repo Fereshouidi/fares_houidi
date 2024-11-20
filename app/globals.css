@@ -42,7 +42,6 @@ a {
 } */
 
 
-
 body{
   background-color: var(--primary-color-demi-transparent);
   margin: 0;
@@ -61,7 +60,7 @@ body{
 :root{
 
     /* colors */
-    --primary-color: red;
+    --primary-color: rgb(7, 215, 7);
     --secondary-color: yellow;
     --melange: rgb(58, 128, 0);
     --primary-color-demi-transparent: rgba(7, 241, 7, 0.108);

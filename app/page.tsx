@@ -8,6 +8,7 @@ import './styles/media.css';
 import './scripts/desin.js';
 import React from "react";
 import { CldImage } from 'next-cloudinary';
+import { getAllProjects } from "./crud.mjs";
 //import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // import { mouseEnter } from "./scripts/nav_icon.js";
@@ -55,6 +56,14 @@ export default function Home() {
 
     },[navIconHover, navIconClicked, navSectionHover])
 
+
+    const getData = async() => {
+        const allProducts = await getAllProjects();
+        console.log(allProducts);
+    }
+    useEffect(() => {
+        getData()
+    }, [])
 
   return (
     <>
