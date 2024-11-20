@@ -11,7 +11,7 @@
     }
 
     .navIconClicked{
-        
+
     }
     .navIconNotClicked{
         
@@ -48,10 +48,6 @@
     }
     .navSectionExist{
         height: 100vh;
-    }
-    .navSectionExist *{
-        display: flex;
-        opacity: 1;
     }
     .navSectionNotExist{
         position: fixed;

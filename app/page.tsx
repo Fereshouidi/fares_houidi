@@ -6,10 +6,13 @@ import './styles/style.css';
 import './styles/icon.css';
 import './styles/media.css';
 import './scripts/desin.js';
+import React from "react";
 // import { mouseEnter } from "./scripts/nav_icon.js";
 
 export default function Home() {
 
+
+    
     const [navIconHover, setNavIconHover] = useState(false);
     const [navIconClicked, setNavIconClicked] = useState(false);
     const [navSectionHover, setNavSecgtionHover] = useState(false);
@@ -31,6 +34,11 @@ export default function Home() {
     }
     const handelNavSectionMouseLeave = () => {
         setNavSecgtionHover(false);
+    }
+    const handelNavSectionExist = () => {
+        setNavIconClicked(false);
+        setNavSecgtionHover(false)
+        setNavSectionExist(false);
     }
   
     useEffect(() => {
@@ -70,9 +78,9 @@ export default function Home() {
     <div className={navSectionExist? 'navSectionExist': 'navSectionNotExist'} id="navSection_"
         onMouseEnter={handelNavSectionMouseEnter}
         onMouseLeave={handelNavSectionMouseLeave}>
-        <a className="nav-links" href="#services-section-tittle">Services</a>
-        <a className="nav-links" href="#projects-section-tittle">Projects</a>
-        <a className="nav-links" href="#contact-section-tittle">Contact</a>
+        <a className="nav-links" href="#services-section-tittle" onClick={handelNavSectionExist}>Services</a>
+        <a className="nav-links" href="#projects-section-tittle" onClick={handelNavSectionExist}>Projects</a>
+        <a className="nav-links" href="#contact-section-tittle" onClick={handelNavSectionExist}>Contact</a>
     </div>
 
     <section id="presentation-section">
