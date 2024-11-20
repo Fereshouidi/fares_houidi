@@ -7,7 +7,7 @@ import './styles/icon.css';
 import './styles/media.css';
 import './scripts/desin.js';
 import React from "react";
-import { CldImage } from 'next-cloudinary';
+// import { CldImage } from 'next-cloudinary';
 import { getAllProjects } from "./crud.mjs";
 //import '@fortawesome/fontawesome-free/css/all.min.css';
 
