@@ -7,6 +7,9 @@ import './styles/icon.css';
 import './styles/media.css';
 import './scripts/desin.js';
 import React from "react";
+import { CldImage } from 'next-cloudinary';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 // import { mouseEnter } from "./scripts/nav_icon.js";
 
 export default function Home() {
@@ -55,6 +58,14 @@ export default function Home() {
 
   return (
     <>
+    <CldImage
+              src="cld-sample-5" // Use this sample image or upload your own via the Media Explorer
+              width="500" // Transform the image: auto-crop to square aspect_ratio
+              height="500"
+              crop={{
+                  type: 'auto',
+                  source: true
+              }} alt={""}    />
       <header id="laptop-header">
         <a href="#" id="tittle">FARES HOUIDI</a>
         <nav>

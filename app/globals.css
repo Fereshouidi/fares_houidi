@@ -1,3 +1,5 @@
+
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -40,9 +42,6 @@ a {
     color-scheme: dark;
   }
 } */
-
-@import "@fortawesome/fontawesome-free/css/all.min.css";
-
 
 
 body{
