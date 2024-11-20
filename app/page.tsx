@@ -58,14 +58,14 @@ export default function Home() {
 
   return (
     <>
-    <CldImage
+    {/* <CldImage
               src="cld-sample-5" // Use this sample image or upload your own via the Media Explorer
               width="500" // Transform the image: auto-crop to square aspect_ratio
               height="500"
               crop={{
                   type: 'auto',
                   source: true
-              }} alt={""}    />
+              }} alt={""}    /> */}
       <header id="laptop-header">
         <a href="#" id="tittle">FARES HOUIDI</a>
         <nav>
