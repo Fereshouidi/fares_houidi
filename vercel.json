@@ -1,6 +1,10 @@
 {
-    "builds": [
-      { "src": "next.config.js", "use": "@vercel/next" }
-    ]
+    "version": 2,
+    "rewrites": [
+      { "source": "/old-path", "destination": "/new-path" }
+    ],
+    "env": {
+      "NEXT_PUBLIC_API_URL": "https://example.com/api"
+    }
   }
   
