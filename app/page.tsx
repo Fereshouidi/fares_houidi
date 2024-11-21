@@ -61,11 +61,10 @@ export default function Home() {
     const getData = async() => {
         const allProducts = await getAllProjects();
         setAllProjects(allProducts);
-        alert(allProducts);
     }
     
     useEffect(() => {
-        getData()
+        getData();
     }, [])
 
   return (
