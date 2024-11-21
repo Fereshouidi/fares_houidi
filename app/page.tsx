@@ -42,7 +42,7 @@ export default function Home() {
     }
     const handelNavSectionExist = () => {
         setNavIconClicked(false);
-        setNavSecgtionHover(false).
+        setNavSecgtionHover(false)
         setNavSectionExist(false);
     }
   
