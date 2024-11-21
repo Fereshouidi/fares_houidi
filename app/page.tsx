@@ -9,7 +9,7 @@ import './scripts/desin.js';
 import React from "react";
 import { CldImage } from 'next-cloudinary';
 import { getAllProjects } from "./crud.mjs";
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // import { mouseEnter } from "./scripts/nav_icon.js";
 
