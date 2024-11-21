@@ -22,6 +22,7 @@ export default function Home() {
     const [navSectionHover, setNavSecgtionHover] = useState(false);
     const [navSectionExist, setNavSectionExist] = useState(false);
     const [navIconClickedShape, setNavIconClickedShape] = useState(false);
+    const [allProjects, setAllProjects] = useState([]);
     
 
     const handleNavIconMouseEnter = () => {
@@ -59,8 +60,10 @@ export default function Home() {
 
     const getData = async() => {
         const allProducts = await getAllProjects();
+        setAllProjects(allProducts);
         console.log(allProducts);
     }
+    
     useEffect(() => {
         getData()
     }, [])
@@ -172,42 +175,21 @@ export default function Home() {
     <section id="projects-section">
         <h2 className="section-tittle" id="projects-section-tittle">Projects</h2>
         <div className="carts-cntainer">
-            <div className="cart">
+            {allProjects.map((project) => {
+                return <div className="cart">
                 <div className="triangle Upper-triangle"></div>
                 <div className=" triangle Bottom-triangle"></div>
                 <div className="container">
                     <div className="project-image">
-                        <img src="./images/profileForPhone.jpg"></img>
+                        <img src={project.background_img}></img>
                     </div>
-                    <p className="discription">any example any example any example any example any example</p>
-                    <h4 className="project-name">project name</h4>
+                    <p className="discription">{project.discription}</p>
+                    <h4 className="project-name">{project.name}</h4>
                     <span className="more-details-btn">more details</span>
                 </div>
             </div>
-            <div className="cart">
-                <div className="triangle Upper-triangle"></div>
-                <div className=" triangle Bottom-triangle"></div>
-                <div className="container">
-                    <div className="project-image">
-                        <img src="./images/profileForPhone.jpg"></img>
-                    </div>
-                    <p className="discription">any example any example any example any example any example</p>
-                    <h4 className="project-name">project name</h4>
-                    <span className="more-details-btn">more details</span>
-                </div>
-            </div>
-            <div className="cart">
-                <div className="triangle Upper-triangle"></div>
-                <div className=" triangle Bottom-triangle"></div>
-                <div className="container">
-                    <div className="project-image">
-                        <img src="./images/profileForPhone.jpg"></img>
-                    </div>
-                    <p className="discription">any example any example any example any example any example</p>
-                    <h4 className="project-name">project name</h4>
-                    <span className="more-details-btn">more details</span>
-                </div>
-            </div>
+            })}
+            
         </div>
     </section>
 

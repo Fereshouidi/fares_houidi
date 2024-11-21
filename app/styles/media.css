@@ -94,6 +94,48 @@
         max-width: 80%;
     }
 
+    #Contact-section #message-bar{
+        width: 85%;
+    }
+    #Contact-section #message-bar:focus-within {
+        width: 95%;
+    }
+    #Contact-section #talk-by-detail i{
+        padding: 20px;
+        margin: 5px;
+        font-size: var(--primary-size);
+    }
+
+    #copyrights-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: 5px;
+        background-color: var(--primary-color-demi-transparent);
+        border-radius: 50px 50px 0 0;
+        /* padding: 10px 0; */
+    }
+    #copyrights-bar h4{
+        margin: 5px;
+        /* margin-bottom: 10px; */
+    }
+    h4{
+        margin: 0;
+    }
+    #copyrights-bar h4 span{
+        color: rgb(0, 170, 0);
+    }
+    #copyrights-bar .social-media i{
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    #copyrights-bar .social-media i:hover{
+        color: var(--primary-color);
+    }
+
 }
 
 @media ( min-width: 550px ) and ( max-width: 650px ){
